@@ -1,5 +1,5 @@
 # Part 2 A Basic Package
-In part 1 we've talked about what packages are, and while that was a nice intro. I'd rather show you how to build one, we won't get to crazy with it, just enough to show you the basics.
+In the previous article we've talked about what packages are, and while that was a nice intro. I'd rather show you how to build one, we won't get to crazy with it, just enough to show you the basics.
 
 ## Barebones structure
 
@@ -88,8 +88,15 @@ pip3 install git+https://github.com/kodaman2/A_Basic_Package.git
 
 Ensure you can still use the ```say_hello()``` function.
 
+**Tip: If you want to know which methods are available in a module:**
+
+```
+>>> dir(hello_world)
+['__builtins__', '__cached__', '__doc__', '__file__', '__loader__', '__name__', '__package__', '__spec__', 'say_hello']
+```
+
 ## Next Article
 
 Make sure you play around with the package, add more functions, more packages, and see what happens. Remember if you decide to play around some more with this package uninstall it, and install as explained in the development section.
 
-In the next article we will discuss some useful packages that we will need for making distribution files, and others that help the workflow of creating packages. In addition I'll provide links to the documentation sites.
+In the next article we will create a more advanced example, while learning how to efficiently create the package with the help of other python tools. Thanks for reading.
